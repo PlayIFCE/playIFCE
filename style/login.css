@@ -67,6 +67,7 @@ input:valid ~ label {
 .forget label {
     display: flex;
     align-items: center;
+    padding-right: 10px;
 }
 
 .forget label input {
@@ -75,6 +76,7 @@ input:valid ~ label {
 
 .forget a {
     text-decoration: none;
+    font-weight: 600;
 }
 
 .forget a:hover {
@@ -94,6 +96,10 @@ button {
     transition: all 0.4s ease;
 }
 
+button:hover {
+    background: #64C27B;
+}
+
 .register {
     font-size: 0.9rem;
     color: #000;
@@ -105,6 +111,7 @@ button {
     font-size: 0.9rem;
     color: #000;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .register p a:hover {
