@@ -73,6 +73,10 @@ input:valid ~ label {
     margin-right: 3px;
 }
 
+.forget a {
+    text-decoration: none;
+}
+
 .forget a:hover {
     text-decoration: underline;
 }
