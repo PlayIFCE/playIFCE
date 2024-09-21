@@ -175,7 +175,7 @@ button:hover {
     left: 0;
     width: 100%;
     height: 60px;
-    background: var(--verde-normal);
+    background: var(--verde-meio-claro);
     filter: blur(60px);
     animation: animBack 6s linear infinite;
 }

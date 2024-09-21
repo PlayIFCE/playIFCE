@@ -31,11 +31,11 @@ section {
 
 .inputbox label {
     position: absolute;
-    top: 40px;          
+    top: 20px;          
     left: 5px;
     transform: translateY(-20%);
     color: var(--preto);
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     pointer-events: none;
     transition: all 0.5s ease-in-out;
 }
@@ -47,7 +47,7 @@ input:valid ~ label {
 
 .inputbox input {
     width: 100%;
-    height: 60px;
+    height: 40px;
     background: transparent;
     border: none;
     outline: none;
@@ -99,23 +99,6 @@ button:hover {
     background: var(--verde-meio-claro);
 }
 
-.login_google{
-    padding-top : 15px;
-    padding-bottom: 0px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 40px;
-    cursor: pointer;
-}
-
-.login_google img {
-    width: 35px;
-    border: 2px solid var(--preto);
-    padding: 5px;
-    border-radius: 100%;
-}
-
-
 .register {
     font-size: 0.9rem;
     color: var(--preto);
@@ -132,4 +115,53 @@ button:hover {
 
 .register p a:hover {
     text-decoration: underline;
+}
+
+.bgAnimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background: var(--branco);
+    filter: saturate(2);
+    overflow: hidden;
+}
+
+.colorBox {
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: var(--branco);
+}
+
+.colorBox:hover {
+    background: var(--verde-claro);
+    transition-duration: 0s;
+}
+
+.backgroundAmim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: var(--verde-normal);
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+}
+
+@keyframes animBack {
+    0%{
+        top: -60px;
+    }
+
+    100%{
+        top: 90%;
+    }
 }
