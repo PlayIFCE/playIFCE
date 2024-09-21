@@ -32,7 +32,7 @@ section {
 .inputbox label {
     position: absolute;
     top: 20px;          
-    left: 5px;
+    left: 0px;
     transform: translateY(-20%);
     color: var(--preto);
     font-size: 1.0rem;
@@ -43,6 +43,8 @@ section {
 input:focus ~ label, 
 input:valid ~ label {
     top: -5px;
+    font-size: 0.75rem;
+    color: var(--verde-escuro);
 }
 
 .inputbox input {
