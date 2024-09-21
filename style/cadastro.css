@@ -19,7 +19,7 @@ section {
 }
 
 .logo-ifce img {
-   max-width: 150px;
+    max-width: 150px;
 }
 
 .inputbox {
@@ -52,8 +52,7 @@ input:valid ~ label {
     border: none;
     outline: none;
     font-size: 1rem;
-    padding: 0 5px 5px;
-    color: #000;
+    color: var(--preto);
 }
 
 .forget {
@@ -99,6 +98,23 @@ button {
 button:hover {
     background: var(--verde-meio-claro);
 }
+
+.login_google{
+    padding-top : 15px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+.login_google img {
+    width: 35px;
+    border: 2px solid var(--preto);
+    padding: 5px;
+    border-radius: 100%;
+}
+
 
 .register {
     font-size: 0.9rem;
