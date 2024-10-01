@@ -50,6 +50,7 @@ input:focus ~ label,
 input:valid ~ label {
     top: 5px;
     font-size: 0.75rem;
+    color: var(--verde-escuro);
 }
 
 .inputbox input {
