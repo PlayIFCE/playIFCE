@@ -1,0 +1,14 @@
+.menu {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.menu-inicial {
+    display: flex;
+}
+
+.menu-inicial img {
+    max-width: 5%;
+    
+}
